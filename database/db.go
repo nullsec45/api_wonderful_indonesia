@@ -1,7 +1,7 @@
 package database
 
 import (
-	"api_wonderful_indonesia/config"
+	"api/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"log"
