@@ -23,12 +23,11 @@ func main() {
 			case "migrate":
 				migration.Migrate()
 			case "run":
-				database.Init()
-				e := routes.Init()
-				e.Logger.Fatal(e.Start(":8080"))
+				database.ConnectDatabase()
+				routes.Init()
 			default:
-				fmt.Println("Selamat Datang di API Wonderful OF Indonesia")
-				fmt.Println("API ini berisikan tentang indahnya keberagaman yang ada di Indonesia")
+				fmt.Println("Selamat Datang di API Wonderful Of Indonesia coy")
+				fmt.Println("API ini berisikan tentang indahnya keberagaman yang ada di Indonesia.")
 			}
 
 			return nil
