@@ -2,9 +2,14 @@ package migration
 
 func Migrate() {
 	KabupatenMigrate()
-	KotaMigrate()
-	UserMigrate()
+	ProvinsiMigrate()
+	MenuMigrate()
 	PakaianAdatMigrate()
 	ProvinsiMigrate()
 	RoleMigrate()
+	UserMigrate()
+	UserRoleMigrate()
+	RoleMenuMigrate()
+	TokenMigrate()
+	SessionMigrate()
 }
